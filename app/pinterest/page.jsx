@@ -1,24 +1,23 @@
 import Image from 'next/image';
 import React from 'react';
-import summz from '../public/assets/projects/summarizer.png'
+import image from '../../public/assets/projects/pinterest.png'
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const summarizer = () => {
+const Pinterest = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
-        <div className='absolute top-0 left-0 w-full h-[30vh] bg-black/70 z-10' />
-        {/* <Image
+        <div className='absolute top-0 left-0 w-full h-[40vh]  bg-black/70 z-10' />
+        <Image
           className='absolute z-1'
           layout='fill'
-          objectFit='cover'
-          src={summz}
+          src={image}
           alt='/'
-        /> */}
+        />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Crypto App</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className='py-2'>Pinterest Clone</h2>
+          <h3>Next JS / Tailwind / Firebase</h3>
         </div>
       </div>
 
@@ -27,29 +26,14 @@ const summarizer = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            I built this app to demonstrate knowledge working in React JS and
-            accessing API endpoints. This app was built using React JS and is
-            hosted on Firebase. This application supports user authentication
-            using firebase. Users are able to create a new account using their
-            email address and can then sign in to save coins to a user specific
-            list. This is made possble by creating a firestore cloud storage
-            database at the time of user registration. Another feature of this
-            application is dynamic routing through the &quot;React Router DOM&quot;
-            package. This application was built using the Coin Gecko API.
+          I'm currently developing a Pinterest clone using Next.js, Firebase, and Google Cloud. While it's not fully completed yet, I'm continuously working to make it even better.
           </p>
           <a
-            href='https://github.com/fireclint/crypto-react-firebase'
+            href='https://github.com/vishnu9315/Pinterest'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Code</button>
-          </a>
-          <a
-            href='https://cryptobase-yt.web.app/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <button className='px-8 py-2 mt-4'>Demo</button>
           </a>
 
         </div>
@@ -58,7 +42,7 @@ const summarizer = () => {
             <p className='text-center font-bold pb-2'>Technologies</p>
             <div className='grid grid-cols-3 md:grid-cols-1 '>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> React
+                <RiRadioButtonFill className='pr-1' /> Next js
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Tailwind
@@ -70,7 +54,7 @@ const summarizer = () => {
                 <RiRadioButtonFill className='pr-1' /> Firebase
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Coin Gecko API
+                <RiRadioButtonFill className='pr-1' /> Google Cloud
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Routes
@@ -86,4 +70,4 @@ const summarizer = () => {
   );
 };
 
-export default summarizer;
+export default Pinterest;

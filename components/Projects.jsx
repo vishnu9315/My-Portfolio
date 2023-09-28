@@ -43,7 +43,7 @@ const Projects = () => {
           <ProjectItem
             title='Pinterest Clone'
             backgroundImg={pinterest}
-            projectUrl='/Pinterest'
+            projectUrl='/pinterest'
             tech='Next JS'
 
           />

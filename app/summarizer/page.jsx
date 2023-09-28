@@ -1,24 +1,23 @@
 import Image from 'next/image';
 import React from 'react';
-import githubImage from '../../public/assets/projects/github.png'
+import image from '../../public/assets/projects/summarizer.png'
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const Github = () => {
+const Summarizer = () => {
   return (
     <div className='w-full'>
-      <div className='w-screen h-[50vh] relative'>
-        <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
+      <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
+        <div className='absolute top-0 left-0 w-full h-[30vh] bg-black/70 z-10' />
         <Image
           className='absolute z-1'
           layout='fill'
-          objectFit='cover'
-          src={githubImage}
+          src={image}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Github User Finder</h2>
-          <h3>React JS / Tailwind Css / Github Api</h3>
+          <h2 className='py-2'>Article Summarizer</h2>
+          <h3>React JS / Tailwind / OpenAi Api</h3>
         </div>
       </div>
 
@@ -27,42 +26,45 @@ const Github = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-          Developed a user-friendly GitHub User Finder web application using React, enabling users to easily search and discover GitHub profiles. 
-          Implemented responsive design Utilized GitHub's API to fetch and display user information.
+          Developed an Article Summarizer, a web application designed to simplify the process of extracting concise summaries from lengthy online articles simply by providing Url. Concepts Used: React.js Tailwind ,Redux,RTK Query
           </p>
           <a
-            href='https://github.com/vishnu9315/Github-user-finder'
+            href='https://github.com/vishnu9315/article-Summarizer'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Code</button>
           </a>
           <a
-            href='https://githubuserfinder9315.netlify.app/login'
+            href='https://summzurl.netlify.app/'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4'>Demo</button>
           </a>
+
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
-            <div className='grid grid-cols-3 md:grid-cols-1'>
+            <div className='grid grid-cols-3 md:grid-cols-1 '>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> React
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Tailwind Css
+                <RiRadioButtonFill className='pr-1' /> Tailwind
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Javascript
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Github Api
+                <RiRadioButtonFill className='pr-1' /> OpenAi Api 
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Fusion Chart
+                <RiRadioButtonFill className='pr-1' /> Redux(Rtk Query)
+              </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Routes
               </p>
             </div>
           </div>
@@ -75,4 +77,4 @@ const Github = () => {
   );
 };
 
-export default Github;
+export default Summarizer;
