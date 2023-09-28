@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import image from '../../public/assets/projects/pinterest.png'
+import image from '../../public/assets/projects/Pinterest.png'
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
