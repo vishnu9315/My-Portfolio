@@ -8,7 +8,7 @@ const Summarizer = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
-        <div className='absolute top-0 left-0 w-full h-[40vh] bg-black/70 z-10' />
+        <div className='absolute top-0 left-0 w-full md:h-[40vh] bg-black/70 z-10' />
         <Image
           className='absolute z-1'
           layout='fill'
@@ -16,8 +16,8 @@ const Summarizer = () => {
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Article Summarizer</h2>
-          <h3>React JS / Tailwind / OpenAi Api</h3>
+          <h2 className='py-2 text-black md:text-white'>Article Summarizer</h2>
+          <h3 className=' text-black md:text-white'>React JS / Tailwind / OpenAi Api</h3>
         </div>
       </div>
 
